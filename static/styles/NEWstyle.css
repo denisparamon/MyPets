@@ -1,0 +1,42 @@
+html {
+    font-size: 15px;
+}
+
+input:hover {
+    background-color: bisque;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background: #808080;
+}
+
+div {
+    border: solid;
+    border-style: groove;
+    border-color: gray;
+    background: #666666;
+}
+
+#A1 {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 6; 
+}
+
+#A2 {
+    grid-row-start: 6;
+    grid-row-end: 14;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+#A3 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 6;
+    grid-column-end: 16;
+}

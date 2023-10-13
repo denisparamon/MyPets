@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPetsEnter</title>
+    <link rel="stylesheet" href="static/styles/styleenter.css">
+    <link rel="stylesheet" href="static/styles/enter.css">
+</head>
+
+<body class="ru-ru">
+    <aside class="afkswitch"> <!--БОКОВОЙ ПЕРЕКЛЮЧАТЕЛЬ-->
+        <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider round"></span>
+        </label>
+    </aside> <!--КОНЕЦ БОКОВОГО ПЕРЕКЛЮЧАТЕЛЯ-->
+    <div class="page">
+        <div class="side_menu"> <!-- АВТОРИЗОВАННЫЙ И БОКОВОЕ МЕНЮ */ -->
+            <div class="account"> <!--АВТОРИЗОВАННЫЙ-->
+                <span class="enter">
+                    <a href="enter.html" target="blank"> Вход </a>
+                </span><br>
+                <span class="reg">
+                    <a href="registration.html" target="blank"> Регистрация </a>
+                </span>
+                <div class="avatar"></div>
+            </div> <!--КОНЕЦ АВТОРИЗОВАННОГО-->
+            <div class="left_nav_bar"><!-- ЛЕВОЕ НАВИГАЦИОННОЕ МЕНЮ-->
+                <nav class="nav_side_menu">
+                    <!--ul class="nav" id="1">
+                        <li><a href="#">Вет Клиники</a></li>
+                        <li><a href="#">Приюты</a></li>
+                        <li><a href="#">Гостиницы</a></li>
+                        <li><a href="#">Передержка</a></li>
+                        <li><a href="#">Груминг</a></li>
+                        <li><a href="#">Товары для животных</a></li>
+                        <li><a href="#">Кладбища для животных</a></li>
+                        <li><a href="#">Дрессировка</a></li>
+                    </ul> -->
+                </nav>
+            </div> <!--КОНЕЦ ЛЕВОГО НАВИГАЦ МЕНЮ-->
+        </div> <!--КОНЕЦ АВТОРИЗОВАННОГО И БОКОВОГО МЕНЮ-->
+
+        <div class="content"> <!-- ЦЕНТРАЛЬНЫЕ БЛОКИ  -->
+            <div class="header_ru"> <!-- ВЕРХНИЙ БЛОК  -->
+                <div class="language-select" style="margin: 2px">
+                    <a href="index.html">
+                        <span class="ru-lang-activ">
+                            <img src="static/images/RU.png" alt="Русский">
+                        </span>
+                    </a>
+                </div>
+                <h1 class="head__1" style="text-align: center; "><b>MyPets</b></h1>
+            </div>
+
+            <div class="central_menu"> <!-- ЦЕНТРАЛЬНОЕ НАВИГАЦИОННОЕ МЕНЮ  -->
+                <span>
+                    <p>Войдите в систему с помощъю Email или телефона:</p>
+                </span>
+            </div>
+            <main class="main"> <!-- ОСНОВНОЕ ОТОБРАЖЕНИЕ ИНФОРМАЦИИ  -->
+                <form>
+                    <label for="emailPhone">Email или телефон:</label>
+                    <input type="text" id="emailPhone" name="emailPhone" required>
+                    <br>
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <input type="submit" value="Войти">
+                  </form>
+            </main>
+        </div> <!--КОНЕЦ ЦЕНТРАЛЬНЫХ БЛОКОВ-->
+    </div> <!--КОНЕЦ Page-->
+    <div class="plinth"> <!-- НИЖНИЕ БЛОКИ-->
+        <div class="box1">
+            Box1
+        </div>
+        <div class="box2">
+            Box2
+        </div>
+    </div> <!-- КОНЕЦ НИЖНИХ БЛОКОВ -->
+</body>
+
+<footer> <!-- Подвал страницы -->
+    <div class="footer">
+        <ul> Контакты
+            <li>Раз</li>
+            <li>Два</li>
+            <li>Три</li>
+        </ul>
+    </div>
+</footer>
+
+</html>

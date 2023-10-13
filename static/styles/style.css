@@ -1,0 +1,222 @@
+html {
+    font-size: 15px;
+}
+
+input:hover {
+    background-color: bisque;
+}
+
+/* ОБЩАЯ НАСТРОЙКА СТРАНИЦЫ*/
+
+body {
+    width: 100%;
+    margin-top: 1px;
+    background: #808080;
+    /* background: #666666; */
+}
+
+.page {
+    display: flex;
+    margin: 0% 10% 0% 10%;
+}
+
+/* РАЗБИРАЕМ БЛОКИ */
+
+/* БОКОВЫЕ АВТОРИЗОВАННЫЙ И БОКОВОЕ НАВИГАЦИОННОЕ МЕНЮ */
+
+.side_menu {
+    min-width: 14%;
+    max-width: 14%;
+}
+
+/* ВЕРХНЕЕ БОКОВОЕ МЕНЮ АВТОРИЗАЦИЯ*/
+
+.account {
+    border: solid;
+    border-style: groove;
+    border-color: gray;
+    background: #666666;
+    padding: 10px 20px 10px 50px;
+    height: 200px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url('../images/unnamed.jpg');
+}
+
+.enter {
+    /* Кнопка входа */
+    text-align: center;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+.reg {
+    /* Кнопка регистрации */
+    margin-left: 2px;
+}
+
+/* НИЖНЕЕ БОКОВОЕ МЕНЮ НАВИГАЦИИ */
+
+.nav_side_menu {
+    border: solid;
+    border-style: groove;
+    border-color: gray;
+    background: #666666;
+    padding: 10px 10px 10px 0px;
+    height: 500px;
+}
+
+.page>.side_menu>.left_nav_bar>.nav_side_menu>ul {
+    list-style: none;
+    /*Маркеры*/
+}
+
+/* ЦЕНТРАЛЬНЫЕ БЛОКИ*/
+
+/* ВЕРХНИЙ БЛОК*/
+
+.content {
+    width: 100%;
+}
+
+.header_ru {
+    border: solid;
+    border-style: groove;
+    border-color: gray;
+    background: #666666;
+    height: 180px;
+}
+
+
+img {
+    float: right;
+}
+
+/* ЦЕНТРАЛЬНОЕ НАВИГАЦИОННОЕ МЕНЮ*/
+
+.central_menu {
+    border: solid;
+    border-style: groove;
+    border-color: gray;
+    background: #666666;
+    height: 37px;
+}
+
+.page>.content>.central_menu>nav>ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    /*Маркеры*/
+}
+
+.page>.content>.central_menu>nav>ul>li>a {
+    padding: 5px;
+}
+
+main {
+    border: solid;
+    border-style: groove;
+    border-color: gray;
+    background: #666666;
+    padding: 10px 20px 10px 10px;
+    height: 500px;
+}
+
+/* НИЖНИЙ ОТСЕК*/
+
+.plinth {
+    display: flex;
+    margin: 0% 10% 0% 10%;
+}
+
+.box1 {
+    flex: 1;
+    display: inline-block;
+    border: solid;
+    border-style: groove;
+    border-color: gray;
+    background: #666666;
+    min-width: 50%;
+    max-width: 50%;
+    height: 200px;
+}
+
+.box2 {
+    flex: 1;
+    display: inline-block;
+    border: solid;
+    border-style: groove;
+    border-color: gray;
+    background: #666666;
+    min-width: 50%;
+    max-width: 50%;
+    height: 200px;
+    margin-right: 1px;
+}
+
+/* ПОДВАЛ */
+
+footer {
+    display: flex;
+    margin: 0% 10% 0% 10%;
+    border: solid;
+    border-style: groove;
+    border-color: gray;
+    background: #666666;
+}
+
+/* БОКОВОЙ ПЕРЕКЛЮЧАТЕЛЬ*/
+
+.afkswitch {
+    position: absolute;
+    left: 0;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
